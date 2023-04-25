@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de PDF</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+           
+        }
+
+        .content-info {
+            width: 600px;
+        }
+
+        .content-login {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .content-login-box {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 16px;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px, rgb(0 0 0 / 10%) 0px 8px 16px;
+        }
+
+        .inputs {
+            padding: 15px;
+            height: 22px;
+            border-radius: 6px;
+            border: 1px solid;
+            width: 80%;
+            font-size: 17px;
+            color: black;
+        }
+
+        .inputs:focus {
+            border-color: blue;
+        }
+
+        .btn{
+            padding: 15px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            transition: .2s;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            width: 100%;
+            border: 1px solid grey;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .btn-create-account {
+            background-color: goldenrod;
+            cursor: pointer;
+            width: auto;
+        }
+
+        .btn-enter {
+            background-color: darkblue;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: darkblue;
+            font-size: 45px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <div class="content">
+            <div class="content-info">
+                <h1>Sistema para Gerenciamento de Documentos Digitais em Formato PDF</h1>
+                <h3>O sistema que irá te ajudar na gestão dos documentos PDFs</h3>
+        </div>
+
+        <div class="content-login">
+            <div class="content-login-box">
+                <input type="text" placeholder="Usuário ou E-mail" name="txtUsuario" class="inputs" maxlength="50" required><br>
+                <input type="password" placeholder="Digite a sua senha" name="txtsenha" maxlength="50" required><br>
+                <button class="btn btn-enter">Entrar</button>
+                <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                <hr>
+                <button class="btn btn-create-account">Criar conta</button>
+        </div>
+        <p><strong>Gestão de Arquivos PDFs</strong></p>
+    </div>
+    
+</body>
+</html>
