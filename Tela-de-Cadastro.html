@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Tela de cadastro</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28;
+            background-color: darkblue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form textarea {
+            outline: unset;
+            padding: 5px;
+            width: 500px;
+            border: 1px solid darkblue;
+            border-radius: 20px;
+        }
+
+        form input:focus,
+        form textarea:focus {
+            background-color: royalblue;
+        }
+
+        form input[type_submit] {
+            background-color: royalblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        form label {
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Sistema para Gerenciamento de Documentos Digitais em Formato PDF</h1>
+    </header>
+    <div class="p-2 row bg-secondary">   
+    <div class="col">
+
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="container-fluid ">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Cadastrar novo usuário</a>
+                        </li>
+            </nav>
+            <section>
+                <form>
+                    <div>
+                        <label>Nome:</label>
+                        <input type="text" placeholder="Digite o seu nome" name="txtNome" class="form-control"
+                            maxlength="70" required><br>
+                    </div>
+                    <div>
+                        <label>E-mail:</label>
+                        <input type="email" placeholder="Digite o seu e-mail" name="txtE-mai" class="form-control"
+                            maxlength="70" aria-describedby="emailHelp" required><br>
+                    </div>
+                    <div>
+                        <label>Login:</label>
+                        <input type="text" placeholder="Digite o seu login" name="txtLogin" class="form-control"
+                            maxlength="50" required><br>
+                    </div>
+                    <div>
+                        <label>Senha:</label>
+                        <input type="password" placeholder="Digite a sua senha" name="txtsenha" class="form-control"
+                            maxlength="50" required><br>
+                    </div>
+                    <div>
+                        <label>Senha:</label>
+                        <input type="password" placeholder="Repita a sua senha" name="txtSenha2" class="form-control"
+                            maxlength="16" required><br>
+                    </div>
+                    <input type="button" value="Cadastrar" />
+                </form>
+            </section>
+</body>
+<footer class="bg-black text-center mt-1" style="background-color: antiquewhite;">
+    SistemaPDF
+</footer>
+</html>
